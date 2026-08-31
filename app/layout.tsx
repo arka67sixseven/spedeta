@@ -34,6 +34,11 @@ export const metadata: Metadata = {
     siteName: "SMP Taman Dewasa Jetis Yogyakarta",
     images: ["/images/logo/logo.png"],
   },
+  icons: {
+    icon: "/images/logo/logo.png",
+    apple: "/images/logo/logo.png",
+    shortcut: "/images/logo/logo.png",
+  },
 };
 
 export default function RootLayout({
