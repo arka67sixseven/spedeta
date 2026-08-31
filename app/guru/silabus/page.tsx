@@ -1,0 +1,43 @@
+import { PageHero, ContactStrip } from "@/components/UI";
+import { silabusNote } from "@/data/guru";
+
+export const metadata = {
+  title: "Silabus",
+  description: "Silabus pembelajaran SMP Taman Dewasa Jetis Yogyakarta.",
+};
+
+export default function SilabusPage() {
+  return (
+    <>
+      <PageHero
+        title="Silabus"
+        subtitle="Daftar silabus mata pelajaran di SMP Taman Dewasa Jetis Yogyakarta."
+        breadcrumb="Guru › Silabus"
+      />
+      <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+        <Placeholder note={silabusNote} icon="📘" />
+      </div>
+      <ContactStrip />
+    </>
+  );
+}
+
+function Placeholder({ note, icon }: { note: string; icon: string }) {
+  return (
+    <div className="flex flex-col items-center rounded-3xl border-2 border-dashed border-primary-200 bg-earth-50 p-12 text-center">
+      <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary-100 text-4xl">
+        {icon}
+      </div>
+      <h2 className="mt-5 font-display text-2xl font-bold text-primary-900">
+        Silabus
+      </h2>
+      <p className="mt-3 max-w-md text-ink-soft">{note}</p>
+      <a
+        href="mailto:info@smptdjetis.sch.id"
+        className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary-700 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-800"
+      >
+        Hubungi Sekolah
+      </a>
+    </div>
+  );
+}
