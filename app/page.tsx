@@ -4,6 +4,7 @@ import HeroSlider from "@/components/HeroSlider";
 import { SectionHeading, CtaButton } from "@/components/UI";
 import { sambutan, testimoni } from "@/data/home";
 import Gallery from "@/components/Gallery";
+import BeritaSection from "@/components/BeritaSection";
 import VideoEmbed from "@/components/VideoEmbed";
 import { prestasi, kepalaSekolah } from "@/data/profil";
 
@@ -212,6 +213,8 @@ export default function HomePage() {
           <Gallery />
         </div>
       </section>
+
+      <BeritaSection />
 
       {/* PPDB CTA */}
       <section className="bg-gradient-to-r from-primary-800 to-primary-700 py-16">
