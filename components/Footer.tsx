@@ -15,7 +15,7 @@ export default function Footer() {
                 alt="Logo SMP Taman Dewasa Jetis"
                 width={48}
                 height={48}
-                className="h-11 w-auto rounded bg-white object-contain p-1"
+                className="h-11 w-auto object-contain"
               />
               <div className="leading-tight">
                 <p className="font-display text-base font-bold text-white">
