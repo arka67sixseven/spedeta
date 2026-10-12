@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import HeroSlider from "@/components/HeroSlider";
 import { SectionHeading, CtaButton } from "@/components/UI";
@@ -6,7 +5,7 @@ import { sambutan, testimoni } from "@/data/home";
 import Gallery from "@/components/Gallery";
 import BeritaSection from "@/components/BeritaSection";
 import VideoEmbed from "@/components/VideoEmbed";
-import { prestasi, kepalaSekolah } from "@/data/profil";
+import { prestasi } from "@/data/profil";
 
 export const metadata = {
   title: "Beranda",
@@ -22,26 +21,7 @@ export default function HomePage() {
 
       {/* Sambutan Kepala Sekolah */}
       <section id="sambutan" className="bg-white py-20 sm:py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-          <div className="relative mx-auto max-w-md lg:max-w-none">
-            <div className="absolute -left-4 -top-4 h-24 w-24 rounded-2xl bg-accent-100" aria-hidden />
-            <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-              <Image
-                src={sambutan.foto}
-                alt={`Foto ${kepalaSekolah.nama}`}
-                width={720}
-                height={720}
-                className="aspect-square w-full object-cover"
-              />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary-950/90 to-transparent p-5">
-                <p className="font-display text-lg font-bold text-white">
-                  {kepalaSekolah.nama}
-                </p>
-                <p className="text-sm text-accent-300">Kepala Sekolah</p>
-              </div>
-            </div>
-          </div>
-
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div>
             <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent-600">
               {sambutan.judul}
@@ -144,7 +124,7 @@ export default function HomePage() {
             title="Prestasi Siswa"
             subtitle="Berbagai prestasi akademik dan non-akademik yang diraih oleh siswa-siswi SMP Taman Dewasa Jetis Yogyakarta."
           />
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
             {prestasi.slice(0, 8).map((p, i) => (
               <div
                 key={i}
@@ -182,7 +162,7 @@ export default function HomePage() {
             subtitle="Cerita pengalaman belajar di SMP Taman Dewasa Jetis Yogyakarta."
             light
           />
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
             {testimoni.map((t, i) => (
               <figure
                 key={i}
