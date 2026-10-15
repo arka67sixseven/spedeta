@@ -47,7 +47,7 @@ export default async function BeritaDetailPage({ params }: Props) {
 
       <article className="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:px-8">
         <Link
-          href="/#berita"
+          href="/berita"
           className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-primary-600 transition-colors hover:text-accent-600"
         >
           <svg

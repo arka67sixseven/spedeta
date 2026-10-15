@@ -18,6 +18,7 @@ export const site = {
 
 export const nav = [
   { label: "Beranda", href: "/" },
+  { label: "Berita", href: "/berita" },
   {
     label: "Profil Sekolah",
     href: "/profil-sekolah",

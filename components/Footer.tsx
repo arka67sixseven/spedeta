@@ -78,6 +78,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/berita" className="hover:text-accent-300">
+                  Berita &amp; Kegiatan
+                </Link>
+              </li>
+              <li>
                 <Link href="/profil-sekolah" className="hover:text-accent-300">
                   Profil Sekolah
                 </Link>
