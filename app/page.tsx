@@ -19,6 +19,8 @@ export default function HomePage() {
       <div id="top" />
       <HeroSlider />
 
+      <BeritaSection />
+
       {/* Sambutan Kepala Sekolah */}
       <section id="sambutan" className="bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -193,8 +195,6 @@ export default function HomePage() {
           <Gallery />
         </div>
       </section>
-
-      <BeritaSection />
 
       {/* PPDB CTA */}
       <section className="bg-gradient-to-r from-primary-800 to-primary-700 py-16">
